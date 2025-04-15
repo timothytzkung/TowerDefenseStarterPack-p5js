@@ -13,8 +13,8 @@ const GAMEOVER = 4;
 let mode; // :int
 
 // Colour
-let white;  // :color
-let black;  // :color
+let white;  
+let black; 
 
 // Mouse and keyboard interaction variables
 let mouseReleased; // :boolean
@@ -34,13 +34,10 @@ let startButton;
 
 
 function setup() {
-    // Colour
-  white = color(255);
-  black = color(0);
-  
   createCanvas(1000, 800);
   
   initModes();
+  initVariables()
   makeButtons()
 
 }
@@ -52,6 +49,10 @@ function initModes() {
 }
 
 function initVariables() {
+  // Load colours
+  white = color(255);
+  black = color(0);
+
   // Load images
   
   // Load fonts
