@@ -2,17 +2,36 @@
 // Demo Starter Code
 // IAT 165
 
-// ==== Global Variables ====
+/* 
+======= Global Variables =======
+*/
 
 const INTRO = 0;
 const PLAY = 1;
 const BUILD = 2;
 const GAMEOVER = 4;
-let mode;
+let mode; // :int
 
 // Colour
-let white;
-let black;
+let white;  // :color
+let black;  // :color
+
+// Mouse and keyboard interaction variables
+let mouseReleased; // :boolean
+let wasPressed // :boolean
+
+// Buttons
+let startButton;
+
+// Collection of objects
+
+
+// Images
+
+
+// Fonts
+
+
 
 function setup() {
     // Colour
@@ -24,7 +43,6 @@ function setup() {
   initModes();
   makeButtons()
 
-
 }
 
 function initModes() {
@@ -33,9 +51,17 @@ function initModes() {
   mode = INTRO;
 }
 
+function initVariables() {
+  // Load images
+  
+  // Load fonts
+  
+  // Create collection of objects
+}
+
 function makeButtons() {
   // INTRO - Start
-  let startButton = createButton("START")
+  startButton = createButton("START")
   startButton.position(width/2, 3*height/4)
   startButton.size(200, 100)
   
@@ -47,12 +73,15 @@ function makeButtons() {
 }
 
 function makeNodes() {
-  
+  // Plot nodes on the map
 }
 
+/*
+======== DRAW ==========
+*/
+
 function draw() {
-  background(220);
-  
+  click()
   switch (mode) {
     case INTRO:
       intro()
