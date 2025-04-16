@@ -63,7 +63,7 @@ function initVariables() {
 function makeButtons() {
   // INTRO - Start
   startButton = createButton("START")
-  startButton.position(width/2, 3*height/4)
+  startButton.position(width/2 - 100, 3*height/4)
   startButton.size(200, 100)
   
   // PLAY - Next Wave => To Build Mode
